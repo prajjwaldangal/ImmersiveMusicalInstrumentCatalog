@@ -1,0 +1,28 @@
+packages:
+  - .
+overrides:
+  sharp: 0.35.4
+  three: npm:super-three@0.181.0
+onlyBuiltDependencies:
+  - esbuild
+  - protobufjs
+  - sharp
+ignoredBuiltDependencies:
+  - "@meta-quest/metavr"
+  - onnxruntime-node
+allowBuilds:
+  esbuild: true
+  protobufjs: true
+  sharp: true
+  "@meta-quest/metavr": false
+  onnxruntime-node: false
+minimumReleaseAgeExclude:
+  - '@iwer/devui@2.5.0'
+  - '@iwsdk/cli@1.0.0-rc.2'
+  - '@iwsdk/core@1.0.0-rc.2'
+  - '@iwsdk/locomotor@1.0.0-rc.2'
+  - '@iwsdk/reference@1.0.0-rc.2'
+  - '@iwsdk/scene-composition@1.0.0-rc.2'
+  - '@iwsdk/vite-plugin-dev@1.0.0-rc.2'
+  - '@iwsdk/xr-input@1.0.0-rc.2'
+  - iwer@2.5.0

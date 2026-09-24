@@ -1,0 +1,48 @@
+<!-- Catalog panel: instrument info + viewer controls. IDs are the runtime contract. -->
+<style>
+  .panel-root { flex-direction: column; width: 380px; }
+  .panel-content { flex-direction: column; padding-top: 14px; padding-left: 22px; padding-right: 22px; }
+  .heading { font-size: 22px; font-weight: 700; line-height: 22px; color: #1b1e23; text-align: center; }
+  .heading:dark { color: rgba(255, 255, 255, 0.92); }
+  .meta { font-size: 13px; font-weight: 500; line-height: 16px; color: #3a3f47; margin-top: 6px; text-align: center; }
+  .meta:dark { color: rgba(255, 255, 255, 0.85); }
+  .status { font-size: 12px; line-height: 15px; color: #1f6feb; margin-top: 8px; text-align: center; }
+  .row { flex-direction: row; justify-content: space-between; gap: 8px; margin-top: 10px; }
+  .button { width: 104px; }
+  .section-label { font-size: 12px; font-weight: 700; color: #5b616b; margin-top: 12px; }
+  .section-label:dark { color: rgba(255, 255, 255, 0.7); }
+</style>
+<Panel class="panel-root">
+  <div class="panel-content">
+    <div id="CatalogTitle" class="heading">Instrument Catalog</div>
+    <div id="InstrumentName" class="meta">Diaphragm Condenser Mic - $249</div>
+    <div id="InstrumentTagline" class="meta">Large-diaphragm studio condenser</div>
+    <Divider></Divider>
+    <div class="section-label">Inspect (360 + zoom)</div>
+    <div class="row">
+      <Button id="Btn_RotLeft" class="button"><ButtonLabel>Turn left</ButtonLabel></Button>
+      <Button id="Btn_Spin" class="button"><ButtonLabel>Pause spin</ButtonLabel></Button>
+      <Button id="Btn_RotRight" class="button"><ButtonLabel>Turn right</ButtonLabel></Button>
+    </div>
+    <div class="row">
+      <Button id="Btn_ZoomIn" class="button"><ButtonLabel>Zoom in</ButtonLabel></Button>
+      <Button id="Btn_ZoomOut" class="button"><ButtonLabel>Zoom out</ButtonLabel></Button>
+      <Button id="Btn_Reset" class="button"><ButtonLabel>Reset</ButtonLabel></Button>
+    </div>
+    <div class="section-label">Parts (tap to highlight)</div>
+    <div class="row">
+      <Button id="Btn_Part_GrilleHead" class="button"><ButtonLabel>Grille</ButtonLabel></Button>
+      <Button id="Btn_Part_DiaphragmCapsule" class="button"><ButtonLabel>Capsule</ButtonLabel></Button>
+    </div>
+    <div class="row">
+      <Button id="Btn_Part_MicBody" class="button"><ButtonLabel>Body</ButtonLabel></Button>
+      <Button id="Btn_Part_MountClip" class="button"><ButtonLabel>Mount</ButtonLabel></Button>
+    </div>
+    <div id="StatusText" class="status">Drag or grab the mic to inspect every angle.</div>
+    <div class="row">
+      <Button id="Btn_Fullscreen" class="button"><ButtonLabel>Fullscreen</ButtonLabel></Button>
+      <Button id="Btn_EnterXR" class="button"><ButtonLabel>Enter XR</ButtonLabel></Button>
+      <Button id="Btn_ExitXR" class="button" style="display: none"><ButtonLabel>Exit XR</ButtonLabel></Button>
+    </div>
+  </div>
+</Panel>

@@ -1,0 +1,176 @@
+{
+  "components": {
+    "com.iwsdk.components.DomeGradient": {
+      "equator": [
+        0.6584,
+        0.7084,
+        0.7913,
+        1
+      ],
+      "ground": [
+        0.807,
+        0.7758,
+        0.7454,
+        1
+      ],
+      "intensity": 1,
+      "sky": [
+        0.2423,
+        0.6172,
+        0.8308,
+        1
+      ]
+    },
+    "com.iwsdk.components.IBLGradient": {
+      "equator": [
+        0.6584,
+        0.7084,
+        0.7913,
+        1
+      ],
+      "ground": [
+        0.807,
+        0.7758,
+        0.7454,
+        1
+      ],
+      "intensity": 1,
+      "sky": [
+        0.6902,
+        0.749,
+        0.7843,
+        1
+      ]
+    }
+  },
+  "nodes": [
+    {
+      "components": {
+        "LocomotionEnvironment": {}
+      },
+      "content": {
+        "asset": "environment-desk",
+        "type": "asset"
+      },
+      "id": "environment",
+      "name": "Environment",
+      "transform": {
+        "position": [
+          0,
+          -0.1069,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          180,
+          0
+        ],
+        "scale": 1
+      }
+    },
+    {
+      "components": {
+        "DistanceGrabbable": {
+          "movementMode": "MoveFromTarget",
+          "rotate": true
+        },
+        "InstrumentViewer": {
+          "autoRotate": true,
+          "focusedPart": "",
+          "instrumentId": "diaphragm-mic",
+          "spinSpeedDeg": 30,
+          "zoom": 1
+        },
+        "RayInteractable": {}
+      },
+      "content": {
+        "asset": "diaphragm-mic",
+        "type": "asset"
+      },
+      "id": "diaphragm-mic",
+      "name": "Diaphragm Mic",
+      "transform": {
+        "position": [
+          -0.3262,
+          1.1673,
+          -1.9375
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "scale": 1.6
+      }
+    },
+    {
+      "components": {
+        "RayInteractable": {}
+      },
+      "content": {
+        "asset": "catalog-panel",
+        "type": "asset"
+      },
+      "id": "catalog-panel",
+      "name": "Catalog Panel",
+      "transform": {
+        "position": [
+          0.7,
+          1.5,
+          -1.9
+        ],
+        "scale": 0.28
+      }
+    },
+    {
+      "components": {
+        "DistanceGrabbable": {
+          "movementMode": "MoveFromTarget"
+        },
+        "RayInteractable": {}
+      },
+      "content": {
+        "asset": "plant-sansevieria",
+        "type": "asset"
+      },
+      "id": "plant-sansevieria",
+      "name": "Plant Sansevieria",
+      "transform": {
+        "position": [
+          1.2,
+          0.85,
+          -1.8
+        ]
+      }
+    },
+    {
+      "components": {},
+      "content": {
+        "asset": "webxr-banner",
+        "type": "asset"
+      },
+      "id": "webxr-banner",
+      "name": "WebXR Banner",
+      "transform": {
+        "position": [
+          0,
+          1,
+          1.8
+        ],
+        "rotationDeg": [
+          0,
+          180,
+          0
+        ],
+        "scale": [
+          1,
+          -1,
+          1
+        ]
+      }
+    }
+  ],
+  "resources": {},
+  "units": "meters",
+  "version": "iwsdk.scene.v1"
+}
